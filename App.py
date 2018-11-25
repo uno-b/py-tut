@@ -62,7 +62,7 @@ friends = ["Kevin", "Karen", "Jim", "Oscar", "Toby"]
 friends1 = ["Kevin", "Karen", "Jim", "Oscar", "Toby"]
 friends.extend(lucky_numbers)   # extends lucky_numbers to friends list
 friends.append("Creed")     # adds an element at the end of the list
-friends.insert(1, "Kelly")      #inserts "Kelly" at index [1], all other elements are moved
+friends.insert(1, "Kelly")      # inserts "Kelly" at index [1], all other elements are moved
 friends.remove("Jim")   # removes element with value "Jim"
 friends.pop()       # removes last element in the list ("Creed")
 print(friends)      # ['Kevin', 'Kelly', 'Karen', 'Oscar', 'Toby', 12, 99, 69, 33, 123]
@@ -76,6 +76,45 @@ friends.clear()     # removes every element
 print(friends)      # []
 friends = friends1.copy()   # friends is the same as friends1 now
 print(friends)
+
+print("\n///// Functions /////\n")
+
+
+def say_hi(name, age):  # indentation matters
+    print("Hello " + name + ". You are " + str(age) + " years old.")
+
+
+say_hi("John", 11)
+say_hi("Uno", 20)
+
+
+def cube(num):
+    return num * num * num
+
+
+print(cube(3))
+
+print("\n///// If statements /////\n")
+
+is_male = True
+is_tall = False
+
+if is_male or is_tall:
+    print("You are a male or tall.")
+else:
+    print("You are neither a male nor tall.")
+
+if is_male and is_tall:
+    print("You are a male and tall.")
+elif is_male and not(is_tall):
+    print("You are a short male")
+elif not(is_male) and is_tall:
+    print("You are not male but tall")
+else:
+    print("You are either not male or not ball or both.")
+
+
+
 
 
 
