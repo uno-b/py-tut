@@ -55,7 +55,27 @@ print(friends[1:])  # ['Karen', 'Jim', 'Oscar', 'Toby']
 print(friends[1:3])     # ['Karen', 'Jim']
 # returns array with elements from index [1] to exclusive [3]
 
+print("\n///// List functions /////\n")
 
+lucky_numbers = [12, 99, 69, 33, 123]
+friends = ["Kevin", "Karen", "Jim", "Oscar", "Toby"]
+friends1 = ["Kevin", "Karen", "Jim", "Oscar", "Toby"]
+friends.extend(lucky_numbers)   # extends lucky_numbers to friends list
+friends.append("Creed")     # adds an element at the end of the list
+friends.insert(1, "Kelly")      #inserts "Kelly" at index [1], all other elements are moved
+friends.remove("Jim")   # removes element with value "Jim"
+friends.pop()       # removes last element in the list ("Creed")
+print(friends)      # ['Kevin', 'Kelly', 'Karen', 'Oscar', 'Toby', 12, 99, 69, 33, 123]
+print(friends.count("Kevin"))      # returns the number of elements with value "Kevin"
+print(friends.index("Karen"))      # returns the first index of element with value "Karen"
+friends1.sort()      # sort in ascending order using first letter
+print(friends1)     # ['Jim', 'Karen', 'Kevin', 'Oscar', 'Toby']
+lucky_numbers.reverse()     # sort in a descending order using numbers
+print(lucky_numbers)    # [123, 33, 69, 99, 12]
+friends.clear()     # removes every element
+print(friends)      # []
+friends = friends1.copy()   # friends is the same as friends1 now
+print(friends)
 
 
 
